@@ -13,6 +13,10 @@
 		D73E39151DC2529F003BC716 /* twitterPlsWork.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D73E39131DC2529F003BC716 /* twitterPlsWork.xcdatamodeld */; };
 		D73E39171DC2529F003BC716 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D73E39161DC2529F003BC716 /* Assets.xcassets */; };
 		D73E391A1DC2529F003BC716 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D73E39181DC2529F003BC716 /* LaunchScreen.storyboard */; };
+		D7609FC31DD0D66500DEF00F /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7609FBF1DD0D66500DEF00F /* Fabric.framework */; };
+		D7609FC41DD0D66500DEF00F /* TwitterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7609FC01DD0D66500DEF00F /* TwitterKit.framework */; };
+		D7609FC51DD0D66500DEF00F /* TwitterKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D7609FC11DD0D66500DEF00F /* TwitterKitResources.bundle */; };
+		D7609FC61DD0D66500DEF00F /* TwitterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7609FC21DD0D66500DEF00F /* TwitterCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		D73E39161DC2529F003BC716 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D73E39191DC2529F003BC716 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D73E391B1DC2529F003BC716 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D7609FBF1DD0D66500DEF00F /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = SOURCE_ROOT; };
+		D7609FC01DD0D66500DEF00F /* TwitterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterKit.framework; sourceTree = SOURCE_ROOT; };
+		D7609FC11DD0D66500DEF00F /* TwitterKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = TwitterKitResources.bundle; path = TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle; sourceTree = SOURCE_ROOT; };
+		D7609FC21DD0D66500DEF00F /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterCore.framework; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +39,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7609FC31DD0D66500DEF00F /* Fabric.framework in Frameworks */,
+				D7609FC61DD0D66500DEF00F /* TwitterCore.framework in Frameworks */,
+				D7609FC41DD0D66500DEF00F /* TwitterKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +73,10 @@
 				D73E39161DC2529F003BC716 /* Assets.xcassets */,
 				D73E39181DC2529F003BC716 /* LaunchScreen.storyboard */,
 				D73E391B1DC2529F003BC716 /* Info.plist */,
+				D7609FBF1DD0D66500DEF00F /* Fabric.framework */,
+				D7609FC01DD0D66500DEF00F /* TwitterKit.framework */,
+				D7609FC11DD0D66500DEF00F /* TwitterKitResources.bundle */,
+				D7609FC21DD0D66500DEF00F /* TwitterCore.framework */,
 				D73E39131DC2529F003BC716 /* twitterPlsWork.xcdatamodeld */,
 			);
 			path = twitterPlsWork;
@@ -77,6 +92,7 @@
 				D73E39051DC2529F003BC716 /* Sources */,
 				D73E39061DC2529F003BC716 /* Frameworks */,
 				D73E39071DC2529F003BC716 /* Resources */,
+				D7609FBE1DD0D62B00DEF00F /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -99,6 +115,7 @@
 				TargetAttributes = {
 					D73E39081DC2529F003BC716 = {
 						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = W783696E58;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -126,6 +143,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7609FC51DD0D66500DEF00F /* TwitterKitResources.bundle in Resources */,
 				D73E391A1DC2529F003BC716 /* LaunchScreen.storyboard in Resources */,
 				D73E39171DC2529F003BC716 /* Assets.xcassets in Resources */,
 				D73E39121DC2529F003BC716 /* Main.storyboard in Resources */,
@@ -133,6 +151,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D7609FBE1DD0D62B00DEF00F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run b9473554c711df436ef048a9af0c59fd0852a72d a94a5b156e4c32a2b17d55e4397cd3eca3f529e78b5220c273a54e02892c0329";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D73E39051DC2529F003BC716 /* Sources */ = {
@@ -264,7 +298,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = W783696E58;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = twitterPlsWork/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.jhhs.617329.twitterPlsWork;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -276,7 +316,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = W783696E58;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = twitterPlsWork/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.jhhs.617329.twitterPlsWork;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -303,6 +349,7 @@
 				D73E39201DC2529F003BC716 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
